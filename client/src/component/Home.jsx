@@ -6,7 +6,9 @@ const Home = ({ history }) => {
     const userInfo = localStorage.getItem("userInfo");
 
     if (userInfo) {
+      
       history.push("/");
+      
     }
   }, [history]);
 
