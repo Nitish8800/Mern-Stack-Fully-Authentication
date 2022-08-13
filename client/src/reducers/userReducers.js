@@ -30,6 +30,7 @@ import {
     switch (action.type) {
       case USER_REGISTER_REQUEST:
         return { loading: true };
+            
       case USER_REGISTER_SUCCESS:
         return { loading: false, userInfo: action.payload };
       case USER_REGISTER_FAIL:
@@ -40,7 +41,8 @@ import {
   };
   
   export const userUpdateReducer = (state = {}, action) => {
-    switch (action.type) {
+    switch (action.type)
+    {
       case USER_UPDATE_REQUEST:
         return { loading: true };
       case USER_UPDATE_SUCCESS:
@@ -49,6 +51,7 @@ import {
         return { loading: false, error: action.payload, success: false };
       default:
         return state;
+            
     }
   };
   
